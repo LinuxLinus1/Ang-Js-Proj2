@@ -1,0 +1,9 @@
+<h2 class="sec">ENTER YOUR E-MAIL BELOW</h2>
+<form name="form1" ng-submit="save(this)" novalidate>
+    <label for="name" class="lbl">Email: </label>
+    <input type="email" name="email" data-ng-model="email" required />
+    <input type="submit" value="Enter" class="btn-form">
+    <br>
+    <div class="err">{{errorMsg}}</div>
+    <br>
+</form>

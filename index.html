@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gr8estate | Best real estate</title>
+    <link rel="shortcut icon" href="./images/home icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./angular.js"></script>
+    <script src="./app.js"></script>
+</head>
+<body ng-controller="MyController">  
+
+<nav ng-style="div imgStyle td" ng-include="'./templates/navbar.html'"></nav>
+
+<div class="Home-details" ng-include="'./templates/HomeDetails.html'"></div>
+
+<div class="boxes" ng-include="'./templates/boxes.html'"></div>
+
+<div class="about" ng-include="'./templates/about.html'"></div>
+
+<div class="section" ng-include="'./templates/form.html'"></div>
+
+<footer class="foot" ng-include="'./templates/footer.html'"></footer>
+<!-- question abt links having the same src -->
+<!-- is ng-submit only used for form tags -->
+</body>
+</html>
